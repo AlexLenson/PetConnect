@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, literal } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Animal extends Model {}
+class Animal extends Model { }
 
 Animal.init(
   {
@@ -10,6 +10,14 @@ Animal.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+    },
+    intake_type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    in_date: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
     },
     pet_name: {
       type: DataTypes.STRING,
@@ -20,7 +28,7 @@ Animal.init(
       allowNull: false,
     },
     pet_age: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     pet_size: {
@@ -37,19 +45,22 @@ Animal.init(
     },
     picture: {
       type: DataTypes.STRING,
-      allowNull: false,
+    },
+    sex: {
+      type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
-        model: 'user',
+        model: 'users',
         key: 'id',
       },
     },
   },
   {
     sequelize,
-    // timestamps: false,
+    timestamps: false,
     // freezeTableName: true,
     underscored: true,
     modelName: 'animal',

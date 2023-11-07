@@ -2,7 +2,7 @@ const sequelize = require('../config/connection');
 const { User, Animal } = require('../models');
 
 const userData = require('./userData.json');
-const projectData = require('./projectData.json');
+const animalData = require('./animalData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,12 +12,10 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const project of projectData) {
-    await Animal.create({
-      ...project,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  const animals = await Animal.bulkCreate(animalData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };
