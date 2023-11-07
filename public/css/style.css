@@ -2,6 +2,12 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+.custom-bg {
+  background-image: url('https://comptroller.texas.gov/economy/fiscal-notes/2021/jul/images/rescue-hero.jpg');
+  background-position: center;
+
+}
+
 .no-button {
   background: none;
   border: none;
@@ -21,4 +27,8 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+.support {
+  padding: 15px 50px;
 }

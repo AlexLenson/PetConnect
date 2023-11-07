@@ -1,15 +1,15 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Animal } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newAnimal = await Animal.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newProject);
+    res.status(200).json(newAnimal);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const projectData = await Project.destroy({
+    const projectData = await Animal.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
