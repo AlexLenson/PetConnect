@@ -4,12 +4,14 @@
       <div class="column is-one-quarter">
         <p style="margin-top: 10%;">Welcome - choose to search</p>
         <div style="margin-top: 10%;">
-          <a href="#" class="button is-primary is-fullwidth is-size-4 is-rounded">Dogs</a>
+          <a href="/search/dog" id="dog-btn" data-id="{{Pet.animal_type}}" class="button is-primary is-fullwidth is-size-4 is-rounded">Dogs</a>
         </div>
         <div style="margin-top: 10%;">
-          <a href="#" class="button is-primary is-fullwidth is-size-4 is-rounded">Cats</a>
+          <a href="/search/cat" id="cat-btn" data-id="{{Pet.animal_type}}" class="button is-primary is-fullwidth is-size-4 is-rounded">Cats</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script src="./js/dog.js"></script>
