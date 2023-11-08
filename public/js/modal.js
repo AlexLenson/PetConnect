@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalIntakeDate = modal.querySelector("#pet-intake-date-modal");
     const cancelButton = modal.querySelector("#cancelButton");
     const closeButton = modal.querySelector(".delete");
+    const likeButton = document.querySelector("#likeButton");
 
     // Add a click event listener to each table row
     tableRows.forEach((row) => {
@@ -55,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Close the modal when the close button is clicked
     closeButton.addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+    likeButton.addEventListener("click", function () {
         modal.classList.remove("is-active");
     });
 });
