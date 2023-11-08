@@ -26,9 +26,6 @@ router.get('/search/:type', withAuth, async (req, res) => {
       order: [['pet_name', 'ASC']],
     });
 
-
-    
-    res.json(petData);
     const pets = petData.map((project) => project.get({ plain: true }));
 
     res.render('search', {
@@ -40,10 +37,6 @@ router.get('/search/:type', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
-
-
 
 router.get('/project/:id', async (req, res) => {
   try {
