@@ -28,7 +28,7 @@ router.get('/search/:type', withAuth, async (req, res) => {
 
 
     
-    res.json(petData);
+    // res.json(petData);
     const pets = petData.map((project) => project.get({ plain: true }));
 
     res.render('search', {
