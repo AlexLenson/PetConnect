@@ -2,7 +2,18 @@ const router = require('express').Router();
 const { Animal, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res)=>{
+  try{
+    res.render('init', { 
+    
+    });
+  }
+  catch (err) {
+    res.status(500).json(err);
+  }
+  });
+  
+router.get('/home', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const projectData = await Animal.findAll({
@@ -26,6 +37,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 
 router.get('/project/:id', async (req, res) => {
   try {
@@ -79,4 +91,13 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+
+  res.render('signup');
+});
 module.exports = router;
