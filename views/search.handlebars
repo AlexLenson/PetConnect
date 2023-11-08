@@ -1,0 +1,63 @@
+
+<div class="select is-info" id="size">
+  <select>
+    <option>Size</option>
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+  </select>
+</div>
+<div class="select is-info" id="color">
+  <select>
+    <option>Color</option>
+    <option>Gray</option>
+    <option>Brown</option>
+    <option>Black</option>
+    <option>White</option>
+    <option>Blue</option>
+    <option>Orange</option>
+  </select>
+</div>
+<div class="select is-info" id="gender">
+  <select>
+    <option>Gender</option>
+    <option>M</option>
+    <option>F</option>
+    <option>S</option>
+    <option>N</option>
+  </select>
+</div>
+
+<table class="table">
+    <thead>
+    <tr>
+      <th>Intake Type</th>
+      <th>In Date</th>
+      <th>Pet Name</th>
+      <th>Type</th>
+      <th>Age</th>
+      <th>Size</th>
+      <th>Color</th>
+      <th>Breed</th>
+      <th>Gender</th>
+      <th>Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each pets as |pet|}}
+    <tr>
+      <td>{{pet.intake_type}}</td>
+      <td>{{pet.in_date}}</td>
+      <th>{{pet.pet_name}}</th>
+      <td>{{pet.pet_type}}</td>
+      <td>{{pet.pet_age}}</td>
+      <td>{{pet.pet_size}}</td>
+      <td>{{pet.color}}</td>
+      <td>{{pet.breed}}</td>
+      <td>{{pet.sex}}</td>
+      <td>{{pet.picture}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+  </table>
+</div>
