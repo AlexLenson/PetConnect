@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Animal, User } = require('../models');
+const { Pet, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res)=>{
@@ -18,9 +18,36 @@ router.get('/home', async (req, res) => {
   }
 });
 
+// Go to search page and find all pets depending on whether cats or dogs was selected
+router.get('/search/:type', withAuth, async (req, res) => {
+  try {
+    const petData = await Pet.findAll({
+      where: { animal_type: req.params.type},
+      order: [['pet_name', 'ASC']],
+    });
+
+
+    
+    res.json(petData);
+    const pets = petData.map((project) => project.get({ plain: true }));
+
+    res.render('search', {
+      pets,
+      // Pass the logged in flag to the template
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
+
+
 router.get('/project/:id', async (req, res) => {
   try {
-    const projectData = await Animal.findByPk(req.params.id, {
+    const projectData = await Pet.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -46,7 +73,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Animal }],
+      include: [{ model: Pet }],
     });
 
     const user = userData.get({ plain: true });
