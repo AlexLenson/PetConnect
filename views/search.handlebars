@@ -1,10 +1,10 @@
 
-<div class="select is-info" id="size">
-  <select>
-    <option>Size</option>
-    <option>Small</option>
-    <option>Medium</option>
-    <option>Large</option>
+{{!-- <div class="select is-info" id="size">
+  <select name="size">
+    <option value="0">Size</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
   </select>
 </div>
 <div class="select is-info" id="color">
@@ -27,6 +27,7 @@
     <option>N</option>
   </select>
 </div>
+<button id="go-btn" type="submit">Go</button> --}}
 
 <div class="table-container">
 <table class="table is-bordered is-striped table is-hoverable">
@@ -61,4 +62,30 @@
   {{/each}}
   </tbody>
   </table>
+</div>
+
+
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">PET CARD</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <h1>PET NAME HERE</h1>
+      <img>PHOTO</img>
+      <p>PET BREED</p>
+      <p>PET AGE</p>
+      <p>PET SEX</p>
+      <p>PET COLOR</p>
+      <p>PET SIZE</p>
+      <p>INTAKE DATE</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Like</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
 </div>
