@@ -95,3 +95,7 @@ likeButton.addEventListener("click", function () {
   console.log(petId);
   addLike(petId);
 });
+
+// petfindbykey
+// if petfindkey(show unlike)
+// else ('like')
