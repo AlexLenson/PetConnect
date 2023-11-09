@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalPetColor = modal.querySelector("#pet-color-modal");
     const modalPetSize = modal.querySelector("#pet-size-modal");
     const modalIntakeDate = modal.querySelector("#pet-intake-date-modal");
+    const modalPetId = modal.querySelector('#pet-id');
     const cancelButton = modal.querySelector("#cancelButton");
     const closeButton = modal.querySelector(".delete");
     const likeButton = document.querySelector("#likeButton");
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 petColor: row.cells[5].textContent,
                 petSize: row.cells[4].textContent,
                 intakeDate: row.cells[1].textContent,
+                petID: row.cells[10].textContent,
             };
 
             // Populate the modal with the row data
@@ -38,12 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
             modalPetColor.textContent = rowData.petColor;
             modalPetSize.textContent = rowData.petSize;
             modalIntakeDate.textContent = rowData.intakeDate;
+            modalPetId.textContent = rowData.petID
 
+            
             // Display the modal when a row is clicked
             modal.classList.add("is-active");
+
         });
     });
-
+       
     // Close the modal when the background is clicked
     modalBackground.addEventListener("click", function () {
         modal.classList.remove("is-active");
@@ -60,6 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     likeButton.addEventListener("click", function () {
         // modal.classList.remove("is-active");
-        likeButton.innerHTML = "Like ❤️"
-    });
+        likeButton.innerHTML = "Like";
+        likeButton.innerHTML = "Like ❤️";
+
+        const petId = document.querySelector('#pet-id').textContent;
+
+        console.log(petId);
+
 });
+    });
+
