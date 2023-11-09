@@ -7,11 +7,13 @@ header, .project:not(:last-child) {
   background-position: center;
 
 }
-.bg-img {
-  background-image: url('https://i0.wp.com/bfpa.org/wp-content/uploads/2020/04/home_banner.jpg?fit=1300%2C432&ssl=1');
+.custom-gg {
+  background-image: url('https://pethavenmn.org/wp-content/uploads/2017/08/5a898cc6f6567557b5376222cfa764d593fd7cbb.jpg');
   background-position: center;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .no-button {
   background: none;
   border: none;
