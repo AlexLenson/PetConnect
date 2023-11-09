@@ -5,7 +5,8 @@ header, .project:not(:last-child) {
 .custom-bg {
   background-image: url('https://comptroller.texas.gov/economy/fiscal-notes/2021/jul/images/rescue-hero.jpg');
   background-position: center;
-
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .custom-gg {
   background-image: url('https://pethavenmn.org/wp-content/uploads/2017/08/5a898cc6f6567557b5376222cfa764d593fd7cbb.jpg');
@@ -19,10 +20,26 @@ header, .project:not(:last-child) {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.custom-qg {
+  background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/happy-puppies-warren-photographic.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.custom-qq {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/53adf8f4e4b096ce15bbc27f/1513040002882-XNRXQUA1Y5QYV0N4U8W3/iStock-824825464.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .div1 {
   width: 1200px;
   height: 100px;
   padding: 50px;
+  box-shadow: none;
+}
+
+.box {
   box-shadow: none;
 }
 
