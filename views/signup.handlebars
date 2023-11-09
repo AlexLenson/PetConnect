@@ -1,24 +1,36 @@
-<div class="col-md-6">
-    <h2>Create an account</h2>
+<section class="hero is-large  blur has-bg-img custom-dg ">
+  <div class="hero-body">
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">Sign Up</button>
-      </div>
-    </form>
   </div>
+</section>
+<div class="parent1">
+<div class="box div1 m-5">
+  <h2>Create an account</h2>
+
+  <form class="form signup-form">
+    <div class="form is-small">
+      <label for="name-signup">Your Name:</label>
+      <input class="form-input" type="text" id="name-signup" placeholder="John Smith" />
+    </div>
+    <div class="form">
+      <label for="email-signup">Email:</label>
+      <input class="form-input" type="text" id="email-signup" placeholder="email@example.com"/>
+    </div>
+    <div class="form">
+      <label for="password-signup">Password:</label>
+      <input class="form-input" type="password" id="password-signup" placeholder="Password"/>
+    </div>
+    <div class="form-group has-text-centered pt-5">
+      <button class="btn btn-primary" type="submit">Sign Up</button>
+    </div>
+  </form>
+  <div class="has-text-centered">
+    <br>
+    <a href="/login">Already have an account? Login!</a>
+    <br>
+  </div>
+</div>
+</div>
 </div>
 
 <script src="./js/signup.js"></script>
