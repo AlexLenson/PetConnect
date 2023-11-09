@@ -63,6 +63,25 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.addEventListener("click", function () {
         modal.classList.remove("is-active");
     });
+
+    const addLike = async (x) => {
+    await fetch(`/api/likes`, {
+        method: 'PUT',
+        body: JSON.stringify({
+          x
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        alert('it worked');
+      } else {
+        alert('it didnt work');
+      }
+    }});
+
     likeButton.addEventListener("click", function () {
         // modal.classList.remove("is-active");
         likeButton.innerHTML = "Like";
@@ -71,7 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const petId = document.querySelector('#pet-id').textContent;
 
         console.log(petId);
+        addLike(petId);
 
 });
-    });
+
 
