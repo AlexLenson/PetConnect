@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Get the data from the clicked row
             const rowData = {
                 petName: row.cells[2].textContent,
-                photo: row.cells[9].textContent, // Update with appropriate image URL
+                photo: row.cells[9].querySelector('img').src, // Update with appropriate image URL
                 petBreed: row.cells[6].textContent,
                 petAge: row.cells[3].textContent,
                 petSex: row.cells[7].textContent,
