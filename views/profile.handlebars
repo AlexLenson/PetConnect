@@ -26,7 +26,7 @@
       <th>Picture</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="unlike-button">
   {{#each pets as |pet|}}
     <tr>
       <td>{{pet.intake_type}}</td>
@@ -39,7 +39,8 @@
       <td>{{pet.sex}}</td>
       <td></td>
       <td><img src="{{pet.picture}}" alt="Pet Image" style="width:250px;height:300px;"></td>
-      <td>{{pet.id}}</td>
+      <td >{{pet.id}}</td>
+      <td><button data-id="{{pet.id}}">Unlike</button></td>
     </tr>
   {{/each}}
   </tbody>
