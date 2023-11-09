@@ -1,0 +1,14 @@
+[
+    {
+        "pet_id": 3,
+        "user_id": 1
+    },
+    {
+        "pet_id": 8,
+        "user_id": 1
+    },
+    {
+        "pet_id":18,
+        "user_id": 2
+    }
+]
