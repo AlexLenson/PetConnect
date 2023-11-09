@@ -57,7 +57,7 @@
       <td>{{pet.breed}}</td>
       <td>{{pet.sex}}</td>
       <td></td>
-      <td>{{pet.picture}}</td>
+      <td><img src="{{pet.picture}}" alt="Pet Image" style="width:250px;height:300px;"></td>
     </tr>
   {{/each}}
   </tbody>
@@ -74,20 +74,19 @@
       <button class="delete" aria-label="close"></button>
     </header>
     <section class="modal-card-body">
-      <div class="content">
-      <h1>PET NAME HERE</h1>
-      <img>PHOTO</img>
-      <p>PET BREED</p>
-      <p>PET AGE</p>
-      <p>PET SEX</p>
-      <p>PET COLOR</p>
-      <p>PET SIZE</p>
-      <p>INTAKE DATE</p>
-      </div>
+      <h1 id="pet-name-modal">PET NAME HERE</h1>
+      <img id="pet-picture-modal">PHOTO</img>
+      <p id="pet-breed-modal">PET BREED</p>
+      <p id="pet-age-modal">PET AGE</p>
+      <p id="pet-sex-modal">PET SEX</p>
+      <p id="pet-color-modal">PET COLOR</p>
+      <p id="pet-size-modal">PET SIZE</p>
+      <p id="pet-intake-date-modal">INTAKE DATE</p>
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Like</button>
-      <button class="button">Cancel</button>
+      <button class="button is-success" id="likeButton">Like</button>
+      <button class="button" id="cancelButton">Cancel</button>
     </footer>
   </div>
 </div>
+<script src="/js/modal.js"></script>

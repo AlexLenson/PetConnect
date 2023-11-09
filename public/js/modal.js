@@ -1,44 +1,64 @@
-// JavaScript
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the table element
-    const table = document.getElementById('#myTable');
-    const rows = table.getElementsByTagName('tr');
-  
-    Array.from(rows).forEach((row, index) => {
-        row.addEventListener('click', () => {
-          const cells = row.getElementsByTagName('td');
-          console.log(cells[0]);
-          console.log(cells[1]);
-      
-          const content1 = cells[0].innerHTML;
-          console.log(content1);
-      
-          const content2 = cells[1].innerHTML;
-          console.log(content2);
+document.addEventListener("DOMContentLoaded", function () {
+    const tableRows = document.querySelectorAll(".table tbody tr");
+    const modal = document.querySelector(".modal");
+    const modalBackground = document.querySelector(".modal-background");
+    const modalPetName = modal.querySelector("#pet-name-modal");
+    const modalPhoto = modal.querySelector("#pet-picture-modal");
+    const modalPetBreed = modal.querySelector("#pet-breed-modal");
+    const modalPetAge = modal.querySelector("#pet-age-modal");
+    const modalPetSex = modal.querySelector("#pet-sex-modal");
+    const modalPetColor = modal.querySelector("#pet-color-modal");
+    const modalPetSize = modal.querySelector("#pet-size-modal");
+    const modalIntakeDate = modal.querySelector("#pet-intake-date-modal");
+    const cancelButton = modal.querySelector("#cancelButton");
+    const closeButton = modal.querySelector(".delete");
+    const likeButton = document.querySelector("#likeButton");
+
+    // Add a click event listener to each table row
+    tableRows.forEach((row) => {
+        row.addEventListener("click", function () {
+            // Get the data from the clicked row
+            const rowData = {
+                petName: row.cells[2].textContent,
+                photo: row.cells[9].textContent, // Update with appropriate image URL
+                petBreed: row.cells[6].textContent,
+                petAge: row.cells[3].textContent,
+                petSex: row.cells[7].textContent,
+                petColor: row.cells[5].textContent,
+                petSize: row.cells[4].textContent,
+                intakeDate: row.cells[1].textContent,
+            };
+
+            // Populate the modal with the row data
+            modalPetName.textContent = rowData.petName;
+            modalPhoto.src = rowData.photo;
+            modalPetBreed.textContent = rowData.petBreed;
+            modalPetAge.textContent = rowData.petAge;
+            modalPetSex.textContent = rowData.petSex;
+            modalPetColor.textContent = rowData.petColor;
+            modalPetSize.textContent = rowData.petSize;
+            modalIntakeDate.textContent = rowData.intakeDate;
+
+            // Display the modal when a row is clicked
+            modal.classList.add("is-active");
         });
-      });
-    // Attach click event listener to table rows
-    // table.addEventListener('click', function (event) {
-    //   // Check if a row was clicked
-    //   if (event.target.tagName === 'td') {
-    //     // Retrieve the data from the clicked row's columns
-    //     const row = event.target.parentNode;
-    //     const column1Data = row.cells[0].textContent;
-    //     const column2Data = row.cells[1].textContent;
-  
-    //     // Populate the modal with the retrieved data
-    //     const modalDataElement = document.getElementById('modalData');
-    //     modalDataElement.innerHTML = `
-    //       <p>Pet Name: ${column1Data}</p>
-    //       <p>Pet Breed: ${column2Data}</p>
-    //     `;
-  
-        const modal = document.getElementById('modal');
-        modal.style.display = 'block';
-  
-        // Handle close button click to hide the modal
-        const closeButton = document.getElementsByClassName('delete')[0];
-        closeButton.addEventListener('click', function () {
-          modal.style.display = 'none';
-        });
-      });
+    });
+
+    // Close the modal when the background is clicked
+    modalBackground.addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+
+    // Close the modal when the "cancel" button is clicked
+    cancelButton.addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+
+    // Close the modal when the close button is clicked
+    closeButton.addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+    likeButton.addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+});
