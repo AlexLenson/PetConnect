@@ -11,4 +11,14 @@ Pet.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
+Pet.belongsToMany(User, {
+  through: Like,
+  foreignKey: "pet_id",
+})
+
+User.belongsToMany(Pet, {
+  through: Like,
+  foreignKey: "user_id",
+})
+
 module.exports = { User, Pet, Like };
