@@ -15,21 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = modal.querySelector(".delete");
   const likeButton = document.querySelector("#likeButton");
 
-  // Add a click event listener to each table row
-  tableRows.forEach((row) => {
-    row.addEventListener("click", function () {
-      // Get the data from the clicked row
-      const rowData = {
-        petName: row.cells[2].textContent,
-        photo: row.cells[9].textContent, // Update with appropriate image URL
-        petBreed: row.cells[6].textContent,
-        petAge: row.cells[3].textContent,
-        petSex: row.cells[7].textContent,
-        petColor: row.cells[5].textContent,
-        petSize: row.cells[4].textContent,
-        intakeDate: row.cells[1].textContent,
-        petID: row.cells[10].textContent,
-      };
+    // Add a click event listener to each table row
+    tableRows.forEach((row) => {
+        row.addEventListener("click", function () {
+            // Get the data from the clicked row
+            const rowData = {
+                petName: row.cells[2].textContent,
+                photo: row.cells[9].querySelector('img').src, // Update with appropriate image URL
+                petBreed: row.cells[6].textContent,
+                petAge: row.cells[3].textContent,
+                petSex: row.cells[7].textContent,
+                petColor: row.cells[5].textContent,
+                petSize: row.cells[4].textContent,
+                intakeDate: row.cells[1].textContent,
+                petID: row.cells[10].textContent,
+            };
 
       // Populate the modal with the row data
       modalPetName.textContent = rowData.petName;
