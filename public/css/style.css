@@ -13,6 +13,24 @@ header, .project:not(:last-child) {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.custom-dg {
+  background-image: url('https://lmuthisweek.lmu.edu/wp-content/uploads/2019/05/banner-pets-dog-cat-1000x451.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.div1 {
+  width: 1200px;
+  height: 100px;
+  padding: 50px;
+  box-shadow: none;
+}
+
+.parent1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .no-button {
   background: none;
