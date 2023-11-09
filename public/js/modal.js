@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.classList.remove("is-active");
     });
     likeButton.addEventListener("click", function () {
-        modal.classList.remove("is-active");
+        // modal.classList.remove("is-active");
+        likeButton.innerHTML = "Like ❤️"
     });
 });
