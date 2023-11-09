@@ -8,14 +8,14 @@ Like.init(
       pet_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'Pet',
+            model: 'pet',
             key: 'id'
         }
       },
       user_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'User',
+                model: 'user',
                 key: 'id'
             }
 
