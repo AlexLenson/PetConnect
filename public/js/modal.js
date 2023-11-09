@@ -75,13 +75,14 @@ const addLike = async (id) => {
       "Content-Type": "application/json",
     },
   })
-  .then((response) => response.JSON())
+  .then((response) => {
   
   if (response.ok) {
     alert("it worked");
   } else {
     alert("it didnt work");
   }
+})
 };
 
 likeButton.addEventListener("click", function () {
