@@ -23,17 +23,18 @@ router.get('/:id', async (req, res) => {
 });
 
 // POST a new like
-router.post('/user/:id', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
-        console.trace(req.params.id);
-        console.trace(req.session.user_id);
+        console.log(req.body.petid);
+        console.log(req.session.user_id);
         const likesData = await Like.create({
-            recipe_id: req.params.id,
-            user_id: req.session.user_id,
+            pet_id: req.body.petid,
+            user_id: req.session.user_id
         });
 
         res.status(200).json(likesData);
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 })
