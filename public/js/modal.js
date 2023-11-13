@@ -92,12 +92,11 @@ const addLike = async (id) => {
   })
 //   .then((response) => {
   
-//   if (response.ok) {
-//     alert("it worked");
-//   } else {
-//     alert("it didnt work");
-//   }
-// })
+  if (response.ok) {
+    alert("Pet added to your Like list");
+  } else {
+    alert("Something Went Wrong. Logout and Sign-in again.");
+  }
 };
 
 // new version -------------------
