@@ -3,6 +3,34 @@ const { Pet } = require('../../models');
 const { User } = require('../../models');
 const { Like } = require('../../models');
 
+
+// Check if the current user has liked a specific pet
+router.get('/check', async (req, res) => {
+    console.log("Entered /check route");
+    try {
+        const petId = req.query.petId;
+        const userId = req.session.user_id;
+
+        console.log('petId:', petId);
+        console.log('userId:', userId);
+
+        // Check if there is a like record for the given pet and user
+        const likeData = await Like.findOne({
+            where: {
+                pet_id: petId,
+                user_id: userId,
+            },
+        });
+
+        console.log('likeData:', likeData);
+
+        res.status(200).json({ hasLiked: likeData !== null });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 router.get('/:id', async (req, res) => {
     try {
         const likesData = await Like.findAll({
@@ -54,6 +82,9 @@ router.delete('/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+
+
 
 
 module.exports = router;

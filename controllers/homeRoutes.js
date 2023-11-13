@@ -24,10 +24,11 @@ router.get('/search/:type', withAuth, async (req, res) => {
     const petData = await Pet.findAll({
       where: { animal_type: req.params.type},
       order: [['pet_name', 'ASC']],
+      // include:[User]
     });
 
     const pets = petData.map((project) => project.get({ plain: true }));
-
+    // console.log(pets);
     res.render('search', {
       pets,
       // Pass the logged in flag to the template
