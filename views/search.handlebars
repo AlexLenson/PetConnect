@@ -1,33 +1,5 @@
 
-{{!-- <div class="select is-info" id="size">
-  <select name="size">
-    <option value="0">Size</option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-  </select>
-</div>
-<div class="select is-info" id="color">
-  <select>
-    <option>Color</option>
-    <option>Gray</option>
-    <option>Brown</option>
-    <option>Black</option>
-    <option>White</option>
-    <option>Blue</option>
-    <option>Orange</option>
-  </select>
-</div>
-<div class="select is-info" id="gender">
-  <select>
-    <option>Gender</option>
-    <option>M</option>
-    <option>F</option>
-    <option>S</option>
-    <option>N</option>
-  </select>
-</div>
-<button id="go-btn" type="submit">Go</button> --}}
+{{!-- TABLE FOR PET INFORMATION --}}
 <div class="">
 <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" id="myTable">
@@ -43,6 +15,7 @@
       <th>Gender</th>
       <th>Likes</th>
       <th>Picture</th>
+      <th>Pet ID</th>
     </tr>
   </thead>
   <tbody>
@@ -58,7 +31,7 @@
       <td>{{pet.breed}}</td>
       <td>{{pet.sex}}</td>
       <td></td>
-      <td><img src="{{pet.picture}}" alt="Pet Image" style="width:250px;height:300px;"></td>
+      <td id="petImg"><img src="{{pet.picture}}" alt="Pet Image" style="width:auto;height:auto;"></td>
       <td>{{pet.id}}</td>
     </tr>
   {{/each}}
@@ -67,7 +40,7 @@
 </div>
 </div>
 
-
+{{!-- MODAL FOR INDIVIDUAL PET INFO / This pops up when a table row is clicked --}}
 <div class="modal">
   <div class="modal-background"></div>
   <div class="modal-card" id="modalData">
@@ -78,12 +51,19 @@
     <section class="modal-card-body has-text-centered">
       <h1 id="pet-name-modal" >PET NAME HERE</h1>
       <img id="pet-picture-modal"></img>
+      <h2>Breed</h2>
       <p id="pet-breed-modal">PET BREED</p>
+      <h2>Age</h2>
       <p id="pet-age-modal">PET AGE</p>
+      <h2>Gender</h2>
       <p id="pet-sex-modal">PET SEX</p>
+      <h2>Color</h2>
       <p id="pet-color-modal">PET COLOR</p>
+      <h2>Size</h2>
       <p id="pet-size-modal">PET SIZE</p>
+      <h2>Intake Date</h2>
       <p id="pet-intake-date-modal">INTAKE DATE</p>
+      <h2>Pet ID</h2>
       <p id="pet-id">PET ID</p>
     </section>
     <footer class="modal-card-foot">

@@ -76,3 +76,9 @@ th:hover {background-color: lightblue;}
 .support {
   padding: 15px 50px;
 }
+
+#petImg {
+  width: 260px;
+  height: auto;
+  padding: 3px;
+}
