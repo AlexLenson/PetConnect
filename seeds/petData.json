@@ -8,7 +8,7 @@
     "pet_size": "MED",
     "color": "BROWN / WHITE",
     "breed": "AM PIT BULL TER",
-    "picture": "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+    "picture": "/images/dogs/23.jpg",
     "sex": "N"
 
   },
@@ -18,10 +18,10 @@
     "pet_name": "CHARLIE",
     "animal_type": "DOG",
     "pet_age": "7 YEARS",
-    "pet_size": "MED",
-    "color": "WHITE / BROWN",
-    "breed": "AM PIT BULL TER / BOXER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "pet_size": "SMALL",
+    "color": "WHITE / TAN",
+    "breed": "NORFOLK TERRIER",
+    "picture": "/images/dogs/22.jpg",
     "sex": "N"
 
   },
@@ -43,11 +43,11 @@
     "in_date": "2023-02-17",
     "pet_name": "CHICHI",
     "animal_type": "DOG",
-    "pet_age": "4 YEARS",
+    "pet_age": "1 YEAR",
     "pet_size": "MED",
     "color": "GRAY",
     "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/25.jpg",
     "sex": "S"
 
   },
@@ -73,7 +73,7 @@
     "pet_size": "MED",
     "color": "BROWN / WHITE",
     "breed": "SIBERIAN HUSKY",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/5.jpg",
     "sex": "S"
 
   },
@@ -82,11 +82,11 @@
     "in_date": "2023-04-03",
     "pet_name": "BULLET",
     "animal_type": "DOG",
-    "pet_age": "1 YEAR 9 MONTHS",
+    "pet_age": "3 MONTHS",
     "pet_size": "LARGE",
     "color": "BLACK / WHITE",
     "breed": "LABRADOR RETR",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/26.jpg",
     "sex": "N"
 
   },
@@ -99,7 +99,7 @@
     "pet_size": "LARGE",
     "color": "WHITE",
     "breed": "SIBERIAN HUSKY / MIX",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/7.png",
     "sex": "N"
 
   },
@@ -112,7 +112,7 @@
     "pet_size": "MED",
     "color": "GRAY",
     "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/27.jpg",
     "sex": "S"
 
   },
@@ -125,7 +125,7 @@
     "pet_size": "MED",
     "color": "GRAY",
     "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/28.jpg",
     "sex": "S"
 
   },
@@ -138,7 +138,7 @@
     "pet_size": "SMALL",
     "color": "BROWN",
     "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/29.jpg",
     "sex": "N"
 
   },
@@ -149,9 +149,9 @@
     "animal_type": "DOG",
     "pet_age": "2 YEARS",
     "pet_size": "SMALL",
-    "color": "GRAY",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "color": "BROWN",
+    "breed": "DACHSHUND",
+    "picture": "/images/dogs/30.jpg",
     "sex": "S"
 
   },
@@ -164,7 +164,7 @@
     "pet_size": "MED",
     "color": "BLACK / WHITE",
     "breed": "POINTER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/9.jpg",
     "sex": "N"
 
   },
@@ -190,7 +190,7 @@
     "pet_size": "LARGE",
     "color": "WHITE / BROWN",
     "breed": "AMERICAN STAFF / MIX",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/31.jpg",
     "sex": "N"
 
   },
@@ -212,24 +212,24 @@
     "in_date": "2023-05-09",
     "pet_name": "TITO",
     "animal_type": "DOG",
-    "pet_age": "3 YEARS",
-    "pet_size": "LARGE",
+    "pet_age": "1 YEARS",
+    "pet_size": "SMALL",
     "color": "WHITE / BLUE",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "breed": "PUG",
+    "picture": "/images/dogs/32.jpg",
     "sex": "N"
 
   },
   {
     "intake_type": "STRAY",
     "in_date": "2023-04-07",
-    "pet_name": "BROWNIE",
+    "pet_name": "MITZI",
     "animal_type": "DOG",
-    "pet_age": "1 YEAR 2 MONTHS",
-    "pet_size": "MED",
-    "color": "BLACK / WHITE",
-    "breed": "AM PIT BULL TER / MIX",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "pet_age": "4 YEARS",
+    "pet_size": "SMALL",
+    "color": "TAN / WHITE",
+    "breed": "CHIHUAHUA",
+    "picture": "/images/dogs/33.jpg",
     "sex": "N"
 
   },
@@ -307,7 +307,7 @@
     "pet_size": "MED",
     "color": "FAWN",
     "breed": "LABRADOR RETR / BOXER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/34.jpg",
     "sex": "N"
 
   },
@@ -331,9 +331,9 @@
     "animal_type": "DOG",
     "pet_age": "8 YEARS",
     "pet_size": "LARGE",
-    "color": "BRINDLE",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "color": "GRAY",
+    "breed": "GREAT DANE",
+    "picture": "/images/dogs/35.jpg",
     "sex": "N"
 
   },
@@ -346,7 +346,7 @@
     "pet_size": "LARGE",
     "color": "BLACK / TAN",
     "breed": "GERM SHEPHERD / MIX",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/6.png",
     "sex": "S"
 
   },
@@ -384,8 +384,8 @@
     "pet_age": "11 MONTHS",
     "pet_size": "MED",
     "color": "BLACK / BROWN",
-    "breed": "BELG MALINOIS",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "breed": "BELG MALINOIS / MIX",
+    "picture": "/images/dogs/16.jpg",
     "sex": "N"
 
   },
@@ -397,8 +397,8 @@
     "pet_age": "4 YEARS",
     "pet_size": "LARGE",
     "color": "TAN / WHITE",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "breed": "GREAT DANE",
+    "picture": "/images/dogs/36.jpg",
     "sex": "S"
 
   },
@@ -411,7 +411,7 @@
     "pet_size": "LARGE",
     "color": "BROWN / WHITE",
     "breed": "GERM SHEPHERD / LABRADOR RETR",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/12.jpg",
     "sex": "N"
 
   },
@@ -420,11 +420,11 @@
     "in_date": "2023-05-20",
     "pet_name": "CHIEF",
     "animal_type": "DOG",
-    "pet_age": "1 YEAR 1 MONTH",
+    "pet_age": "4 MONTHS",
     "pet_size": "LARGE",
-    "color": "BROWN / WHITE",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "color": "BLACK / BROWN",
+    "breed": "LAB MIX",
+    "picture": "/images/dogs/21.jpg",
     "sex": "N"
 
   },
@@ -447,10 +447,10 @@
     "pet_name": "GIZMO",
     "animal_type": "DOG",
     "pet_age": "1 YEAR 3 MONTHS",
-    "pet_size": "MED",
+    "pet_size": "SMALL",
     "color": "TAN / WHITE",
-    "breed": "AM PIT BULL TER",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "breed": "MALTESE",
+    "picture": "/images/dogs/17.jpg",
     "sex": "N"
 
   },
@@ -474,9 +474,9 @@
     "animal_type": "DOG",
     "pet_age": "2 YEARS",
     "pet_size": "MED",
-    "color": "TAN / BLACK",
+    "color": "TAN / WHITE",
     "breed": "AMER BULLDOG",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "picture": "/images/dogs/37.jpg",
     "sex": "N"
 
   },
@@ -487,9 +487,9 @@
     "animal_type": "DOG",
     "pet_age": "1 YEAR",
     "pet_size": "MED",
-    "color": "BROWN / WHITE",
-    "breed": "AM PIT BULL TER / MIX",
-    "picture": "https://www.istockphoto.com/photo/placeholder-banner-dog-gm178482530-21552545",
+    "color": "BROWN / BLACK",
+    "breed": "HAVANESE",
+    "picture": "/images/dogs/19.png",
     "sex": "N"
 
   },
