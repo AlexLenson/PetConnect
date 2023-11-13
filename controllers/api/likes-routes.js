@@ -52,6 +52,7 @@ router.get('/:id', async (req, res) => {
 
 // POST a new like
 router.post('/', async (req, res) => {
+    console.log("Entered the /api/likes route to POST a new like");
     try {
         console.log(req.body.petid);
         console.log(req.session.user_id);
