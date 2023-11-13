@@ -78,16 +78,16 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Pet extends Model {
-  static associate(models) {
-    Pet.belongsTo(models.User, {
-      foreignKey: 'user_id',
-      onDelete: 'CASCADE',
-    });
-    Pet.belongsToMany(models.User, {
-      through: models.Like,
-      foreignKey: 'pet_id',
-    });
-  }
+  // static associate(models) {
+  //   Pet.belongsTo(models.User, {
+  //     foreignKey: 'user_id',
+  //     onDelete: 'CASCADE',
+  //   });
+  //   Pet.belongsToMany(models.User, {
+  //     through: models.Like,
+  //     foreignKey: 'pet_id',
+  //   });
+  // }
 }
 
 Pet.init(

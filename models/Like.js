@@ -43,12 +43,12 @@ const sequelize = require("../config/connection");
 const Pet = require('./Pet');
 
 class Like extends Model {
-  static associate(models) {
-    Like.belongsTo(models.Pet, {
-      foreignKey: 'pet_id',
-      onDelete: 'CASCADE',
-    });
-  }
+  // static associate(models) {
+  //   Like.belongsTo(models.Pet, {
+  //     foreignKey: 'pet_id',
+  //     onDelete: 'CASCADE',
+  //   });
+  // }
 }
 
 Like.init(
@@ -84,22 +84,22 @@ Like.init(
   }
 );
 
-Like.afterCreate(async (like) => {
-  // Update the likes count in the corresponding Pet model
-  const pet = await Pet.findByPk(like.pet_id);
-  if (pet) {
-    pet.likes += 1;
-    await pet.save();
-  }
-});
+// Like.afterCreate(async (like) => {
+//   // Update the likes count in the corresponding Pet model
+//   const pet = await Pet.findByPk(like.pet_id);
+//   if (pet) {
+//     pet.likes += 1;
+//     await pet.save();
+//   }
+// });
 
-Like.beforeDestroy(async (like) => {
-  // Update the likes count by decrementing when a like is removed
-  const pet = await Pet.findByPk(like.pet_id);
-  if (pet) {
-    pet.likes -= 1;
-    await pet.save();
-  }
-});
+// Like.beforeDestroy(async (like) => {
+//   // Update the likes count by decrementing when a like is removed
+//   const pet = await Pet.findByPk(like.pet_id);
+//   if (pet) {
+//     pet.likes -= 1;
+//     await pet.save();
+//   }
+// });
 
 module.exports = Like;

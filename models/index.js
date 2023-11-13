@@ -45,9 +45,9 @@ User.belongsToMany(Pet, {
 });
 
 // Call the associate method in each model to set up associations
-User.associate({ Pet, Like });
-Pet.associate({ User, Like });
-Like.associate({ User, Pet });
+// User.associate({ Pet, Like });
+// Pet.associate({ User, Like });
+// Like.associate({ User, Pet });
 
 
 module.exports = { User, Pet, Like };

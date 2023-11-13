@@ -67,16 +67,16 @@ class User extends Model {
     return bcrypt.compareSync(loginPw, this.password);
   }
 
-  static associate(models) {
-    User.hasMany(models.Pet, {
-      foreignKey: 'user_id',
-      onDelete: 'CASCADE',
-    });
-    User.belongsToMany(models.Pet, {
-      through: models.Like,
-      foreignKey: 'user_id',
-    });
-  }
+  // static associate(models) {
+  //   User.hasMany(models.Pet, {
+  //     foreignKey: 'user_id',
+  //     onDelete: 'CASCADE',
+  //   });
+  //   User.belongsToMany(models.Pet, {
+  //     through: models.Like,
+  //     foreignKey: 'user_id',
+  //   });
+  // }
 }
 
 User.init(

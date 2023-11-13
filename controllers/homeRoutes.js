@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { Pet, User } = require('../models');
+const { Pet, User, Like } = require('../models');
 const withAuth = require('../utils/auth');
+const sequelize = require('../config/connection')
 
 router.get('/', async (req, res)=>{
   try {
@@ -24,8 +25,22 @@ router.get('/search/:type', withAuth, async (req, res) => {
     const petData = await Pet.findAll({
       where: { animal_type: req.params.type},
       order: [['pet_name', 'ASC']],
-      // include:[User]
+      attributes: [
+
+        'intake_type', 'in_date', 'pet_name', 'pet_age', 'pet_size', 'color', 'breed', 'sex', 'picture', 'id',
+      
+        [sequelize.literal('(SELECT COUNT(*) FROM Likes WHERE Likes.pet_id = Pet.id)'), 'likeCount']
+      ]
+        
     });
+
+    // Pet.findAll({
+    //   attributes: [
+    //     'id',
+    //     'name',
+    //     [sequelize.literal('(SELECT COUNT(*) FROM Likes WHERE Likes.pet_id = Pet.id)'), 'likeCount']
+    //   ]
+    // })
 
     const pets = petData.map((project) => project.get({ plain: true }));
     console.log("LOGGING PETS, WE SHOULD SEE A LIKE PROPERTY",pets);
@@ -35,6 +50,7 @@ router.get('/search/:type', withAuth, async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
