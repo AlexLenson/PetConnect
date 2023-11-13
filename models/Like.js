@@ -93,4 +93,13 @@ Like.afterCreate(async (like) => {
   }
 });
 
+Like.beforeDestroy(async (like) => {
+  // Update the likes count by decrementing when a like is removed
+  const pet = await Pet.findByPk(like.pet_id);
+  if (pet) {
+    pet.likes -= 1;
+    await pet.save();
+  }
+});
+
 module.exports = Like;
