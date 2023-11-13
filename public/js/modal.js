@@ -116,7 +116,6 @@ likeButton.addEventListener('click', async (e) => {
     // Check if the user has already liked the pet
     const hasLiked = await hasUserLikedPet(petId);
     console.log("hasLiked: ", hasLiked);
-    console.log("ARE WE EVEN LOGGING THIS????????");
     if (hasLiked) {
         // likeButton.innerHTML = "Like ❤️";
         alert("You've already liked this pet!");
