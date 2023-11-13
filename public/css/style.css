@@ -1,3 +1,7 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
@@ -39,6 +43,9 @@ header, .project:not(:last-child) {
   box-shadow: none;
 }
 
+tr:hover {background-color: lightblue;}
+th:hover {background-color: lightblue;}
+
 .box {
   box-shadow: none;
 }
@@ -73,3 +80,10 @@ header, .project:not(:last-child) {
 .support {
   padding: 15px 50px;
 }
+
+#petImg {
+  width: 260px;
+  height: auto;
+  padding: 3px;
+}
+

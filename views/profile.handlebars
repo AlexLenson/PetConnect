@@ -11,7 +11,7 @@
   </div>
 
 <div class="table-container">
-<table class="table is-bordered is-striped table is-hoverable" id="myTable">
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" id="myTable">
     <thead>
     <tr>
       <th>Intake Type</th>
@@ -38,7 +38,7 @@
       <td>{{pet.breed}}</td>
       <td>{{pet.sex}}</td>
       <td></td>
-      <td><img src="{{pet.picture}}" alt="Pet Image" style="width:250px;height:300px;"></td>
+      <td id="petImg"><img src="{{pet.picture}}" alt="Pet Image" style="width:250px;height:300px;"></td>
       <td >{{pet.id}}</td>
       <td><button data-id="{{pet.id}}">Unlike</button></td>
     </tr>
