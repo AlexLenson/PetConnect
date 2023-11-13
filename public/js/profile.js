@@ -26,7 +26,7 @@ const removeFavorite = async (id) => {
   await fetch(`/api/likes/${id}`, {
     method: `DELETE`,
   })
-  .then(document.location.reload())
+    .then(document.location.reload())
     .then((response) => response.json())
     .catch((err) => console.log(err));
 };
