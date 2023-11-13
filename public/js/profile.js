@@ -1,6 +1,6 @@
 const unlikeButton = document.querySelector(".unlike-button");
 
-
+//Adds liked pet to users profile page
 const addLike = async (id) => {
   petid = id;
   await fetch(`/api/likes`, {
@@ -22,6 +22,7 @@ if (response.ok) {
 })
 };
 
+//Removes liked pet
 const removeFavorite = async (id) => {
   await fetch(`/api/likes/${id}`, {
     method: `DELETE`,
