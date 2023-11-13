@@ -39,6 +39,9 @@ header, .project:not(:last-child) {
   box-shadow: none;
 }
 
+td:hover {background-color: lightblue;}
+th:hover {background-color: lightblue;}
+
 .box {
   box-shadow: none;
 }
