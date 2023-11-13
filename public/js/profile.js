@@ -15,9 +15,9 @@ const addLike = async (id) => {
 .then((response) => {
 
 if (response.ok) {
-  alert("it worked");
+  alert("You Liked This Pet!");
 } else {
-  alert("it didnt work");
+  alert("something went wrong");
 }
 })
 };
