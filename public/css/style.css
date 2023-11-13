@@ -43,7 +43,7 @@ header, .project:not(:last-child) {
   box-shadow: none;
 }
 
-/* tr:hover {background-color: lightblue;} */
+tr:hover {background-color: lightblue;}
 th:hover {background-color: lightblue;}
 
 .box {
@@ -86,3 +86,4 @@ th:hover {background-color: lightblue;}
   height: auto;
   padding: 3px;
 }
+
