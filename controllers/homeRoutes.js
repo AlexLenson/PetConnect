@@ -28,7 +28,7 @@ router.get('/search/:type', withAuth, async (req, res) => {
     });
 
     const pets = petData.map((project) => project.get({ plain: true }));
-    // console.log(pets);
+    console.log("LOGGING PETS, WE SHOULD SEE A LIKE PROPERTY",pets);
     res.render('search', {
       pets,
       // Pass the logged in flag to the template
@@ -63,15 +63,17 @@ router.get('/project/:id', async (req, res) => {
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
+  console.log("ENTERED THE /profile HOME ROUTE");
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Pet }],
     });
-
+    console.log("HERE WE ARE LOGGING userData: ", userData);
+    
     const user = userData.get({ plain: true });
-
+    console.log("HERE WE ARE LOGGING USER: ", user);
     res.render('profile', {
       ...user,
       logged_in: true
