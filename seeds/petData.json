@@ -34,7 +34,7 @@
     "pet_size": "MED",
     "color": "BLACK",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/38.jpg",
     "sex": "N"
 
   },
@@ -60,7 +60,7 @@
     "pet_size": "MED",
     "color": "DIL TORTIE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/39.jpg",
     "sex": "S"
 
   },
@@ -99,7 +99,7 @@
     "pet_size": "LARGE",
     "color": "WHITE",
     "breed": "SIBERIAN HUSKY / MIX",
-    "picture": "/images/dogs/7.png",
+    "picture": "/images/dogs/7.jpg",
     "sex": "N"
 
   },
@@ -177,7 +177,7 @@
     "pet_size": "MED",
     "color": "BRN TABBY / GRAY TAB",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/40.jpg",
     "sex": "N"
 
   },
@@ -203,7 +203,7 @@
     "pet_size": "MED",
     "color": "BLACK / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/41.jpg",
     "sex": "S"
 
   },
@@ -242,7 +242,7 @@
     "pet_size": "MED",
     "color": "ORANGE TAB",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/42.jpg",
     "sex": "N"
 
   },
@@ -255,7 +255,7 @@
     "pet_size": "SMALL",
     "color": "BLACK",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/43.jpg",
     "sex": "S"
 
   },
@@ -268,7 +268,7 @@
     "pet_size": "MED",
     "color": "BRN TABBY",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/44.jpg",
     "sex": "N"
 
   },
@@ -281,7 +281,7 @@
     "pet_size": "MED",
     "color": "BLACK",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/45.jpg",
     "sex": "N"
 
   },
@@ -294,7 +294,7 @@
     "pet_size": "MED",
     "color": "BLACK / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/46.jpg",
     "sex": "S"
 
   },
@@ -320,7 +320,7 @@
     "pet_size": "LARGE",
     "color": "GRAY / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/47.jpg",
     "sex": "N"
 
   },
@@ -346,7 +346,7 @@
     "pet_size": "LARGE",
     "color": "BLACK / TAN",
     "breed": "GERM SHEPHERD / MIX",
-    "picture": "/images/dogs/6.png",
+    "picture": "/images/dogs/6.jpg",
     "sex": "S"
 
   },
@@ -355,11 +355,11 @@
     "in_date": "2023-05-19",
     "pet_name": "MILO",
     "animal_type": "CAT",
-    "pet_age": "8 YEARS",
+    "pet_age": "1 YEAR",
     "pet_size": "MED",
     "color": "BROWN / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/48.jpg",
     "sex": "N"
 
   },
@@ -372,7 +372,7 @@
     "pet_size": "SMALL",
     "color": "GRAY / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/49.jpg",
     "sex": "N"
 
   },
@@ -437,7 +437,7 @@
     "pet_size": "MED",
     "color": "GRAY TAB / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/50.jpg",
     "sex": "S"
 
   },
@@ -463,7 +463,7 @@
     "pet_size": "MED",
     "color": "BRN TABBY / BLACK",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/51.jpg",
     "sex": "S"
 
   },
@@ -489,7 +489,7 @@
     "pet_size": "MED",
     "color": "BROWN / BLACK",
     "breed": "HAVANESE",
-    "picture": "/images/dogs/19.png",
+    "picture": "/images/dogs/19.jpg",
     "sex": "N"
 
   },
@@ -502,7 +502,7 @@
     "pet_size": "SMALL",
     "color": "BROWN",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/52.jpg",
     "sex": "S"
 
   },
@@ -515,7 +515,7 @@
     "pet_size": "MED",
     "color": "CALICO",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/53.jpg",
     "sex": "S"
 
   },
@@ -528,7 +528,7 @@
     "pet_size": "SMALL",
     "color": "ORANGE / WHITE",
     "breed": "DOMESTIC SH",
-    "picture": "https://placekitten.com/300/300",
+    "picture": "/images/cats/54.jpg",
     "sex": "N"
 
   }
