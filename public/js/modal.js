@@ -90,14 +90,13 @@ const addLike = async (id) => {
       "Content-Type": "application/json",
     },
   })
-  .then((response) => {
+//   .then((response) => {
   
   if (response.ok) {
     alert("Pet added to your Like list");
   } else {
     alert("Something Went Wrong. Logout and Sign-in again.");
   }
-})
 };
 
 // new version -------------------
