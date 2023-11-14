@@ -87,3 +87,12 @@ th:hover {background-color: lightblue;}
   padding: 3px;
 }
 
+#petCol {
+  width: 200px;
+  height: auto;
+}
+
+#petimgprofile {
+  width: 200px;
+  height: auto;
+}
