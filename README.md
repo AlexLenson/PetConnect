@@ -58,3 +58,9 @@ At the Pet Rescue Hub, we strongly advocate for adopting pets rather than shoppi
 If you have any questions, concerns, or need assistance, feel free to reach out to our support team at support@petrescuehub.com.
 
 Thank you for choosing the Pet Rescue Hub. Together, let's create a world where every pet has a loving and forever home. Adopt, don't shop!
+
+## Deployed Site
+
+![screenshot](./assets/images/pet_connect_deployed.png)
+
+Link to deployed application: https://pet-connect-1eeb45c85753.herokuapp.com/
